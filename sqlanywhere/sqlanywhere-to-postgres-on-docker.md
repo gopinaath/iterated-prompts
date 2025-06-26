@@ -5,7 +5,7 @@
 I need to migrate my SQL Anywhere database to PostgreSQL. Please help me create a complete migration solution with the following approach:
 
 1. **SETUP PHASE**
-   - Use PostgreSQL with PostGIS Docker: `docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -v ./postgres-data:/var/lib/postgresql/data -p 5432:5432 postgis/postgis:latest`
+   - Use PostgreSQL with PostGIS Docker: `docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -v ~/postgres-data:/var/lib/postgresql/data -p 5432:5432 postgis/postgis:latest`
    - Create a dedicated schema (not public) for the migrated database
    - Configure all connections to use this schema via search_path
 
