@@ -1,0 +1,1 @@
+PGPASSWORD='P0stGr35!' psql -h postgis-rds-db.thisisyourrds.us-west-2.rds.amazonaws.com -U postgres -d gisdb
