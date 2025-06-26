@@ -67,10 +67,10 @@ I need to migrate my SQL Anywhere database to PostgreSQL. Please help me create 
        
        # For each stored procedure, create a method:
        @abstractmethod
-       def show_contacts(self, contact_id: Optional[int] = None) -> List[Dict[str, Any]]: pass
+       def show_entities(self, entity_id: Optional[int] = None) -> List[Dict[str, Any]]: pass
        
        @abstractmethod
-       def manage_contacts(self, action: str, **kwargs) -> Optional[Dict[str, Any]]: pass
+       def manage_entities(self, action: str, **kwargs) -> Optional[Dict[str, Any]]: pass
        
        # ... method for each stored procedure
    ```
@@ -129,7 +129,7 @@ TIMESTAMP            → TIMESTAMP
 def show_entities(self, enitity_id: Optional[int] = None) -> List[Dict[str, Any]]:
     # SQL Anywhere: CALL ShowEntities(?)
     # PostgreSQL: SELECT * FROM showentities(?)
-    # Return: List of contact dictionaries
+    # Return: List of entity dictionaries
 ```
 
 **CRUD Procedures** (ManageEntities):
