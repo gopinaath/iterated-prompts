@@ -5,7 +5,7 @@
 I need to migrate my SQL Anywhere database to PostgreSQL. Please help me create a complete migration solution with the following approach:
 
 1. **SETUP PHASE**
-   - Use PostgreSQL with PostGIS Docker: `docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -v ~/postgres-data:/var/lib/postgresql/data -p 5432:5432 postgis/postgis:latest`
+   - Use PostgreSQL with PostGIS Docker: `docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -v ./postgres-data:/var/lib/postgresql/data -p 5432:5432 postgis/postgis:latest`.  Before running this, check if that port is already in use.   Pick a different port if necessary. If there's another docker isntance that has the same name, pick a different one so that this migration is done on a clean baseline. 
    - Create a dedicated schema (not public) for the migrated database.  Pick a suitable schema name based on SQL Anywhere database name.
    - Configure all connections to use this schema
    - Test connectivity to databases.  PostGreSQL should be already running.  If not, proceed with setting up PostgreSQL docker container as specified. Same with SQLAnywhere.  If these don't work, stop the process and ask the user for inputs.
@@ -144,7 +144,7 @@ def manage_entities(self, action: str, **kwargs) -> Optional[Dict[str, Any]]:
     # Handle ID generation for inserts
 ```
 
-**Complex Procedures** (debugger_tutorial):
+**Complex Procedures** :
 ```python
     # Document any behavioral quirks
 ```
@@ -160,4 +160,5 @@ def manage_entities(self, action: str, **kwargs) -> Optional[Dict[str, Any]]:
 - [ ] Foreign key verification
 - [ ] Performance benchmarking
 - [ ] Documentation of differences
+
 
