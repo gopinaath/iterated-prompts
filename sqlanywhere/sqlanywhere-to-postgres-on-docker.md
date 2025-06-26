@@ -99,6 +99,9 @@ I need to migrate my SQL Anywhere database to PostgreSQL. Please help me create 
    - No orphaned foreign key references
 
 Please structure the migration as separate phases, validate each phase before proceeding, and maintain 100% data integrity throughout. Document any behavioral differences discovered.
+
+If there are errors encountered, iterate to resolve.
+
 ```
 
 ## Quick Reference Card
@@ -158,7 +161,6 @@ def manage_entities(self, action: str, **kwargs) -> Optional[Dict[str, Any]]:
 - [ ] Database adapter API implementation
 - [ ] API compatibility testing between adapters
 - [ ] Foreign key verification
-- [ ] Performance benchmarking
 - [ ] Documentation of differences
 
 
