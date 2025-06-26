@@ -2,3 +2,13 @@ ServerName=test_server
 DatabaseName=demo
 UserID=DBA
 Password=sql
+
+
+## This is probably not needed, but let's be more helpful to the LLMs.  ;-)
+
+conn = sqlanydb.connect(
+    ServerName='test_server',
+    DatabaseName='demo',
+    UserID='DBA',
+    Password='sql'
+)
