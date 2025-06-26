@@ -119,22 +119,22 @@ TIMESTAMP            → TIMESTAMP
 1. **Case**: `MyTable` becomes `mytable` in PostgreSQL
 2. **Procedures**: May not return results for INSERT/UPDATE/DELETE
 3. **Syntax**: `TOP 10` becomes `LIMIT 10`
-4. **Functions**: `ShowContacts(NULL)` needs `ShowContacts(NULL::INTEGER)`
+4. **Functions**: `ShowEntities(NULL)` needs `ShowEntities(NULL::INTEGER)`
 5. **IDs**: SQL Anywhere uses manual `MAX(id)+1`, not sequences
 
 ### API Patterns for Stored Procedures
 
-**Read-Only Procedures** (ShowContacts, ShowCustomers, etc.):
+**Read-Only Procedures** (ShowEntities,  etc.):
 ```python
-def show_contacts(self, contact_id: Optional[int] = None) -> List[Dict[str, Any]]:
-    # SQL Anywhere: CALL ShowContacts(?)
-    # PostgreSQL: SELECT * FROM showcontacts(?)
+def show_entities(self, enitity_id: Optional[int] = None) -> List[Dict[str, Any]]:
+    # SQL Anywhere: CALL ShowEntities(?)
+    # PostgreSQL: SELECT * FROM showentities(?)
     # Return: List of contact dictionaries
 ```
 
-**CRUD Procedures** (ManageContacts):
+**CRUD Procedures** (ManageEntities):
 ```python
-def manage_contacts(self, action: str, **kwargs) -> Optional[Dict[str, Any]]:
+def manage_entities(self, action: str, **kwargs) -> Optional[Dict[str, Any]]:
     # Actions: 'L'ist, 'I'nsert, 'U'pdate, 'D'elete
     # SQL Anywhere: May not return results for I/U/D
     # PostgreSQL: Returns results for all actions
