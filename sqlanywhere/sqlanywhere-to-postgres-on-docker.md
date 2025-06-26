@@ -1,4 +1,4 @@
-#  SQL Anywhere to PostgreSQL Migration Prompt
+#  SQL Anywhere to PostgreSQL on Docker Migration Prompt
 
 ## The Prompt
 
