@@ -35,7 +35,7 @@ Without proper guidance, teams waste 60-70% of their time debugging issues that 
 
 ### How to Use These Prompts
 
-1. **Copy the unified prompt** into your AI assistant (Amazon Q Developer CLI)
+1. **Copy the unified prompt** into your AI assistant (**Amazon Q Developer CLI**)
 2. **Add your specific details**:
    ```
    Here are my connection details:
@@ -50,8 +50,8 @@ Without proper guidance, teams waste 60-70% of their time debugging issues that 
 ## 📋 Migration Checklist
 
 ### Before You Start
-- [ ] Have SQL Anywhere connection credentials
 - [ ] Have RDS PostgreSQL instance provisioned
+- [ ] Have Datbase connection credentials - samples given as .txt files.  (format doesn't matter, just ensure all parameters are in the text file)
 - [ ] Verify network connectivity between migration server and both databases
 - [ ] Install required libraries: `sqlanydb`, `psycopg2-binary`
 - [ ] Have AWS CLI configured for RDS management
