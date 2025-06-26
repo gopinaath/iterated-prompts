@@ -1,5 +1,6 @@
-## The Prompt
+#  SQL Anywhere to Amazon RDS PostgreSQL
 
+## The Prompt
 ```
 I need to migrate my SQL Anywhere database to AWS RDS PostgreSQL. Please help me create a complete migration solution with the following approach:
 
