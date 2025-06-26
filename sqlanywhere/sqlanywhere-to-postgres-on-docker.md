@@ -1,6 +1,5 @@
 #  SQL Anywhere to PostgreSQL on Docker Migration Prompt
 
-## The Prompt
 
 ```
 I need to migrate my SQL Anywhere database to PostgreSQL. Please help me create a complete migration solution with the following approach:
