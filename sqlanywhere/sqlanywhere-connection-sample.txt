@@ -1,0 +1,4 @@
+ServerName=test_server
+DatabaseName=demo
+UserID=DBA
+Password=sql
