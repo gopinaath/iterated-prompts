@@ -13,14 +13,9 @@
 
 ### Which Prompt Should I Use?
 
-2. **`sqlanywhere-to-postgres-on-amazon-rds.md`**
-   - Best for avoiding common pitfalls
-   - Includes specific code examples
+1. For Migration to Amazon RDS  **`sqlanywhere-to-postgres-on-amazon-rds.md`**.  This can also be used for a remote PostGreSQL database instance hosted on-prem
 
-3. **`sqlanywhere-to-postgres-on-docker.md`**
-   - Original comprehensive guide
-   - Good for architecture planning
-   - Easy to read and understand (L100 level)
+2. For Migration to Local PostGres Database (with Docker) **`sqlanywhere-to-postgres-on-docker.md`**
 
 ### How to Use These Prompts
 
