@@ -5,5 +5,7 @@
 
 - https://cuong.io/blog/2025/06/24-claude-code-subagent-deep-dive
 
+- https://docs.anthropic.com/en/docs/claude-code/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees
+
 
 
